@@ -9,19 +9,15 @@
  */
 angular.module('tareasApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.tareas = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.tareas = [ ];
 
 	$scope.addTarea = function(){
 			$scope.tareas.push($scope.tarea);
 			$scope.tarea = ''
 	}
 
-	$scope.eliminarTareas = function(index){
-		$scope.tareas.splice(index , 1 );
+	$scope.eliminarTarea = function(index){
+		$scope.tareas.splice(index , 1 ); 
 	}
 
   });
