@@ -9,9 +9,8 @@
  */
 angular.module('prototipoApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    
+  	var baseURL = 'http://lorempixel.com/960/450/';
+  	$scope.setInterval = 5000;
+
   });
