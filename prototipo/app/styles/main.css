@@ -101,3 +101,13 @@ body {
 }
 
 
+.ngRow.even{
+  background: AliceBlue;
+}
+.ngRow.odd{
+  background: YellowGreen;
+}
+
+
+
+
