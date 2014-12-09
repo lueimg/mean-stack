@@ -31,10 +31,46 @@ angular.module('prototipoApp')
   		$scope.showModal = function(){
   			$scope.nuevoMiembro = {};
   			var modalInstance = $modal.open({
-  				templateUrl: 'views/add-miembros.html'
+  				templateUrl: 'views/add-miembros.html',
+  				controller:'AddNuevoMiembroCtrl',
+  				resolve:{
+  					nuevoMiembro:function(){
+  						return $scope.nuevoMiembro;
+  					}
+  				}
   			});
+
+  			modalInstance.result.then(function(selectedItem){
+  				$scope.miembros.push({
+  					no:$scope.miembros.length + 1,
+  					nombre:$scope.nuevoMiembro.nombre,
+  					tipoMiembro:$scope.nuevoMiembro.tipoMiembro,
+  					fidelidad:$scope.nuevoMiembro.fidelidad,
+  					fechaUnion:$scope.nuevoMiembro.fechaUnion
+  				}); 
+  			});
+
+  		}
+
+  		$scope.cancel = function(){
+
   		}
 
 
 
+  })
+
+  .controller('AddNuevoMiembroCtrl',  function ($scope, $modalInstance , nuevoMiembro) {
+
+  	$scope.nuevoMiembro = nuevoMiembro;
+  	$scope.salvarNuevoMiembro = function(){
+  		$modalInstance.close(nuevoMiembro);
+  	}
+
+  	$scope.cancel = function(){
+  		$modalInstance.dismiss('cancel');
+  	}
+
+
+  		
   });
