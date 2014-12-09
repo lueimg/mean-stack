@@ -31,4 +31,29 @@ angular.module('prototipoApp')
   		}
   	];
 
+
+  	//bloque de contenido
+  	var baseURL = 'http://lorempixel.com/200/200/';
+  	$scope.contenido=[
+  		{
+  			title:'sobre nosotros',
+  			image: baseURL + 'people/',
+  			summary:'Praactica algundeporte todos los dias'
+  		},
+  		{
+  			title:'nuestros servicios',
+  			image: baseURL + 'business/',
+  			summary:'Praactica algundeporte todos los dias'
+  		},
+
+		{
+  			title:'contactanos',
+  			image: baseURL + 'transport/',
+  			summary:'Praactica algundeporte todos los dias'
+  		},
+
+
+  	];
+
+
   });
