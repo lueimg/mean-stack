@@ -18,6 +18,7 @@ angular.module('prototipoApp')
 
   		$scope.gridOptions = {
   			data:'miembros',
+  			showGroupPanel:true,
   			columnDefs:[
   				{field:'no',displayName:'Nro'},
   				{field:'nombre',displayName:'Nombre'},
