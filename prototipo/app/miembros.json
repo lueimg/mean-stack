@@ -1,0 +1,7 @@
+[
+{"no":"1","nombre":"juan","fidelidad":3,"fechaUnion":"3/5/10","tipoMiembro":"Free"},
+{"no":"2","nombre":"carmen","fidelidad":3,"fechaUnion":"3/5/10","tipoMiembro":"Premium"},
+{"no":"3","nombre":"Pedor","fidelidad":4,"fechaUnion":"3/5/10","tipoMiembro":"Free"},
+{"no":"4","nombre":"durnia","fidelidad":6,"fechaUnion":"3/5/10","tipoMiembro":"Premium"},
+{"no":"5","nombre":"alberto","fidelidad":8,"fechaUnion":"3/5/10","tipoMiembro":"Premium"}
+]
